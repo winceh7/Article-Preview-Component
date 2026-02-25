@@ -9,26 +9,28 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
     min-height: 100vh;
     background-color: hsl(210, 46%, 95%);
 }
 
 main {
     display: flex;
-    flex-wrap: wrap;
     margin-top: auto;
-    width: 800px;
-    height: 300px;
+    flex-direction: row;
+    width: min(800px, 95%);
+    height: min(300px, 95%);
     background-color: hsl(0, 0%, 100%);
     border-radius: 1em;
     overflow: hidden;
     font-family: "Manrope", sans-serif;
     font-style: normal;
+    color: hsl(217, 19%, 35%);
 }
 
 #information h1 {
     font-size: 1.5em;
+    font-weight: 700;
+    padding: 1rem;
 }
 
 #image-container {
@@ -37,7 +39,8 @@ main {
 
 #drawers {
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
@@ -46,15 +49,65 @@ main {
     max-width: 60%;
 }
 
+#description {
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
 #author {
     max-width: 100%;
     display: flex;
-    text-align: center;
+    align-items: center;
+    padding: 1em;
+}
+
+#title-author {
+    font-weight: 700;
 }
 
 #avatar {
     border-radius: 50%;
-    max-width: 70%;
+    max-width: 15%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+#publish-info {
+    padding: 0 1em;
+    font-size: 0.9em;
+}
+
+#share-button {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    margin-left: auto;
+    border: none;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+@media screen and (max-width: 800px){
+    main {
+        display: flex;
+        flex-direction: column;
+
+    }
+    #image-container {
+        max-width: 100%;
+        max-height: 40%;
+    }
+
+    #information {
+        max-width: 100%;
+        max-height: 40%;
+    }
+
+    #drawers {
+        max-height: 100%;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
 }
 
 footer {
