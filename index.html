@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+  <script defer src="./button.js"></script>
+
   <title>Article preview component</title>
 
 </head>
@@ -31,7 +33,15 @@
           <p id="title-author">Michelle Appleton</p>
           <p>28 Jun 2020</p>
         </div>
-        <button id="share-button"><img src="./images/icon-share.svg" alt="Share button"></button>
+        <div id="share">
+          <button id="share-button"><img src="./images/icon-share.svg" alt="Share button"></button>
+          <div id="share-options">
+            S H A R E
+            <img src="./images/icon-facebook.svg" alt="">
+            <img src="./images/icon-twitter.svg" alt="">
+            <img src="./images/icon-pinterest.svg" alt="">
+          </div>
+        </div>
       </section>
     </div>
   </main>
