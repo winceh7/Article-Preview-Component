@@ -140,6 +140,26 @@ main {
         max-height: 100%;
         width: 100%;
         aspect-ratio: 16 / 9;
+        border-radius: 1em 1em 0 0 ;
+    }
+
+    #share-button {
+        position: relative;
+        z-index: 1;
+    }
+
+    #share-options {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 3em;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+    }
+
+    #share-options::after {
+        border: 0;                                              
     }
 }
 
