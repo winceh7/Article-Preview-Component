@@ -92,19 +92,32 @@ main {
 }
 
 #share-options {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     gap: 2em;
     position: absolute;
     bottom: 100%;
-    left: 55%;
-    width: 300px;
+    left: 60%;
+    width: 250px;
     height: 60px;
     background-color: hsl(217, 19%, 35%);
     border-radius: 1em;
     color: hsl(212, 23%, 69%);
     font-size: 13px;
+}
+
+#share-options::after {
+    content: '';
+    position: absolute;
+    bottom: -2em;
+    left: 52%;
+    border: 1em solid transparent;
+    border-top: 1em solid hsl(217, 19%, 35%);
+}
+
+#share-button:hover {
+    cursor: pointer;
 }
 
 
