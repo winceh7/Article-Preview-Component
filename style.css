@@ -26,12 +26,6 @@ main {
     color: hsl(217, 19%, 35%);
 }
 
-#information h1 {
-    font-size: 1.5em;
-    font-weight: 700;
-    padding: 1rem;
-}
-
 #image-container {
     max-width: 40%;
 }
@@ -45,12 +39,17 @@ main {
 }
 
 #information {
-    padding: 1em;
     max-width: 60%;
 }
 
+#information h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 1.5rem;
+}
+
 #description {
-    padding: 1rem;
+    padding: 0 1.5rem;
     font-size: 0.9rem;
     font-weight: 400;
 }
@@ -60,7 +59,7 @@ main {
     max-width: 100%;
     display: flex;
     align-items: center;
-    padding: 1em;
+    padding: 1.5rem;
 }
 
 #title-author {
@@ -107,6 +106,10 @@ main {
     font-size: 13px;
 }
 
+#share-options img {
+    width: 10%;
+}
+
 #share-options::after {
     content: '';
     position: absolute;
@@ -149,13 +152,15 @@ main {
     }
 
     #share-options {
-        display: flex;
+        display: none;
         justify-content: flex-start;
         padding-left: 3em;
+        padding-bottom: 1em;
         width: 100%;
-        height: 100%;
+        height: 90%;
         left: 0;
         bottom: 0;
+        border-radius: 0 0 1em 1em;
     }
 
     #share-options::after {
