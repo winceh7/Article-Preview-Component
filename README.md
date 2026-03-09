@@ -44,19 +44,20 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Learned to do a toggletip using CSS properties and the ::after pseudoclass to create the triangle towards the bottom of the share box to finish the stylization.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+#share-options::after {
+    content: '';
+    position: absolute;
+    bottom: -2em;
+    left: 52%;
+    border: 1em solid transparent;
+    border-top: 1em solid hsl(217, 19%, 35%);
 }
 ```
-This being my first project involving JavaScript, I'm proud of this code to give functionality to the toggletip created.
+This being my first project involving JavaScript, I'm proud of this code to give functionality to the toggletip created. Pressing the share icon toggles its display property so it alternates between being visible and disappearing.
+
 ```js
 const shareBtn = document.getElementById('share-button');
 const shareMenu = document.getElementById('share-options');
@@ -72,7 +73,7 @@ shareBtn.addEventListener('click', (e) => {
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I'll continue practicing my JavaScript skills and learn new concepts to develop more complex projects. Practice animations and complex stylization with CSS custom properties.
 
 ### Useful resources
 
