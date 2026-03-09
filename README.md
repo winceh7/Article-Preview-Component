@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/winceh7/Article-Preview-Component)
+- Live Site URL: [Article preview component](https://winceh7.github.io/Article-Preview-Component/)
 
 ## My process
 
